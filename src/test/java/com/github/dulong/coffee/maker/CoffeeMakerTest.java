@@ -23,35 +23,35 @@ public class CoffeeMakerTest {
 
     @Test
     public void makesCappuccino() {
-        coffeeMaker.makeCoffee(pourable, CAPPUCCINO);
+        coffeeMaker.makeCoffee(pourable, new CappuccinoCoffeeProvider());
 
         assertThat(contents, contains(CAPPUCCINO.name(), CoffeeMaker.WATER));
     }
 
     @Test
     public void makesBlack() {
-        coffeeMaker.makeCoffee(pourable, BLACK);
+        coffeeMaker.makeCoffee(pourable, new BlackCoffeeProvider());
 
         assertThat(contents, contains(BLACK.name(), CoffeeMaker.WATER));
     }
 
     @Test
     public void makesMocha() {
-        coffeeMaker.makeCoffee(pourable, MOCHA);
+        coffeeMaker.makeCoffee(pourable, new MochaCoffeeProvider());
 
         assertThat(contents, contains(MOCHA.name(), CoffeeMaker.WATER));
     }
 
     @Test
     public void makesLatte() {
-        coffeeMaker.makeCoffee(pourable, LATTE);
+        coffeeMaker.makeCoffee(pourable, new LatteCoffeeProvider());
 
         assertThat(contents, contains(LATTE.name(), CoffeeMaker.WATER));
     }
 
     @Test
     public void makesEspresso() {
-        coffeeMaker.makeCoffee(pourable, ESPRESSO);
+        coffeeMaker.makeCoffee(pourable, new EspressoCoffeeProvider());
 
         assertThat(contents, contains(ESPRESSO.name(), CoffeeMaker.WATER));
     }
