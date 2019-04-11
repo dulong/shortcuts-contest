@@ -9,15 +9,17 @@
 
 ## 题目1：TDD（测试驱动开发），实现从无序数组中查找最小值
 - 测试用例
-  - 用例1: 从X长度的数组中找出最小值
+  - 测试数据：`6, 9, 15, -2, 92, 11`
+  - 用例1: 从长度为n(n>0)的数组中找出最小值
     - 方法名：`minOfWithSomeElements`
-  - 用例2: 从0长度数组中找出最小值(抛出异常，需要验证异常信息符合要求)
+  - 用例2: 从长度为0的数组中找出最小值(抛出异常，需要验证异常信息符合要求)
     - 方法名：`minOfWithNoElements`
     - 异常类型：`IllegalArgumentException`
     - 异常信息规则：`No element provided`
+  
 - 被测主类
   - 类名：`StatsCalculator` 
-  - 最小值方法命名：`minOf` 
+  - 最小值方法：`minOf(int... array)` 
 - 3分20秒内可完成
 
 ## 题目2：根据建表SQL生成对应的Java class
