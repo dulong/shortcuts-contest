@@ -1,11 +1,14 @@
 # IntelliJ IDEA 快捷键练习题
 
 ## 准备工作
-- Fork `https://github.com/dulong/shortcuts-contest.git`
-- 克隆Fork的项目到本地
+- Fork [https://github.com/dulong/shortcuts-contest.git](https://github.com/dulong/shortcuts-contest.git)
+- 克隆fork的项目到本地
+- 切换到`master`分支（通常clone到本地之后默认就是`master`分支）
 - 使用 IntelliJ IDEA 打开
-- import maven dependencies
+- Import maven dependencies
 - Make Project (⌘F9/Ctrl+F9)
+
+已经完成题目的代码在`answer`分支，需要的话可以参考。
 
 ## 题目1：TDD（测试驱动开发），实现从无序数组中查找最小值
 - 测试用例
